@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
+<style>
+/* **************Navbar CSS************** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    background-color: rgb(250, 240, 227);
+} */
+
+#navbar {
+    width: 100%;
+    position: sticky;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(99, 64, 38);
+}
+
+#navbar>div a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#navbar>div>a>input{
+    padding: 5px;
+    width: 110%;
+    border-radius: 5px;
+}
+
+#navbar>div>a:hover {
+    color: rgb(23, 230, 54);
+    font-weight: bold;
+}
+
+/* **************Navbar CSS************** */
+
+/* **************Responsive CSS************** */
+@media only screen and (max-width: 768px) {
+    #navbar>div a {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #navbar>div a {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    #navbar>div:first-child a img {
+        width: 100px;
+        height: 50px;
+    }
+}
+/* **************Responsive CSS************** */
+</style>
+
+</head>
+<body>
+    <!-- ************Navbar start here****************** -->
+    <div id="navbar">
+        <div><a href="#"><img style="width: 170px; height: 95px;" src="./images/Photo Book.jpeg" alt=""></a></div>
+        <div><a href="#"><input type="text" placeholder="Search here.."></a></div>
+        <div><a href="#">About Us</a></div>
+        <div><a href="#">Our Photographers</a></div>
+        <div><a href="#">Appointments</a></div>
+        <div class="bt"><a href="#">Login</a></div>
+    </div>
+    <!-- **************Navbar end here****************** -->
+</body>
+</html>
