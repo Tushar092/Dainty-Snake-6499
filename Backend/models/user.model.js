@@ -10,6 +10,7 @@ const userSchema = mongoose.Schema({
 	versionKey: false
 })
 
-const user = mongoose.model("user", userSchema)
+const User = mongoose.model("user", userSchema)
 
-export { user };
+// export { user };
+module.exports = { User }
