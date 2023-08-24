@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../styles/index.css"/>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=PT+Sans&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    /* background-color: rgb(181, 116, 67); */
+    
+    background-color: rgb(176, 146, 104);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img-banner{
+    width: 100px;
+}
+
+.swiper .swiper-button-prev,.swiper .swiper-button-next{
+    color: rgb(157, 152, 152);
+    /* background-color: rgba(213, 222, 222, 0.629); */
+    border-radius: 50px;    
+}
+
+.swiper .swiper-pagination-bullet-active{
+    background: #282727
+}
+
+h1{
+  margin-left: 110px;
+  margin-top: 25px;
+  font-size: 28px;
+  font-weight: bold;
+}
+.p{
+  margin-top: 0;
+  margin-top: 12px;
+  font-size: 20px;
+  margin-left: 110px;
+  
+}
+
+#cont{
+   height: 300px;
+   width: 85%;
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   margin-top: 40px;
+   gap: 20px;
+   position: relative;
+}
+
+#cont>div{
+  gap: 10px;
+  height: 300px;
+}
+#cont>div>img{
+  width: 100%;
+}
+
+.text{
+  position: absolute;
+  top: 0;
+  padding: 10px;
+}
+.text>h2{
+  font-weight: bold;
+  font-size: 35;
+}
+.text>h5{
+  line-height: 25px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+</style>
+
+<body>
+    <header></header>
+        
+    <div class="banner-container" style="width: 100%; margin: auto; ">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper" >
+
+          <div class="swiper-slide">
+            <img style="width: 100%;  height: 460px;" src="./images/image1.avif" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img style="width: 100%; height: 460px;" src="./images/image2.webp" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img style="width: 100%; height: 460px;" src="./images/image3.webp" alt="" />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <h1>Photography for Every Milestone</h1>
+    <p class="p">Get inspired to create your own beautiful moments!</p>
+
+    <div id="cont">
+      <div>
+        <img src="https://cdn.sweetescape.com/images/occasions/thumbnail/square/135/6d0b4e9a-be0d-4337-985a-eec772826920.jpg" alt="">
+        <div class="text">
+          <h2>Holiday</h2>
+          <h5>Capture precious <br> moments at your <br> favourite destinations</h5>
+        </div>
+      </div>
+      <div>
+        <img src="https://cdn.sweetescape.com/images/occasions/thumbnail/square/136/8cc4fa2e-3a8c-41e5-994d-752cd8759738.jpg" alt="">
+        <div class="text">
+          <h2>Family</h2>
+          <h5>From intimate family <br> shoots to special <br> gatherings</h5>
+        </div>
+      </div>
+      <div>
+        <img src="https://cdn.sweetescape.com/images/occasions/thumbnail/square/142/a5822fb2-020f-4039-b9bd-c7d41dba03be.jpg" alt="">
+        <div class="text">
+          <h2>Merriage</h2>
+          <h5>From intimate family <br> shoots to special <br> wedding</h5>
+        </div>
+      </div>
+      <div>
+        <img src="https://cdn.sweetescape.com/images/occasions/thumbnail/square/139/83a49867-f471-4f18-8958-52d7d94900ca.jpg" alt="">
+        <div class="text">
+          <h2>Birthday</h2>
+          <h5>Every birthday is <br> worthy to be celebrated</h5>
+        </div>
+      </div>
+    </div>
+
+    <div id="cont">
+      <div>
+        <img src="https://cdn.sweetescape.com/images/occasions/thumbnail/square/141/da58aa66-94fc-4c0d-8ce4-f025d2187f05.jpg" alt="">
+        <div class="text">
+          <h2>Graduation</h2>
+          <h5>Celebrate your <br> Achievements </h5>
+        </div>
+      </div>
+      <div>
+        <img src="https://cdn.sweetescape.com/images/occasions/thumbnail/square/143/732163e7-b158-4bd5-a61b-eab42b931bf4.jpg" alt="">
+        <div class="text">
+          <h2>Baby</h2>
+          <h5>Maternity <br> Newborn </h5>
+        </div>
+      </div>
+      <div>
+        <img src="https://cdn.sweetescape.com/images/occasions/thumbnail/square/136/8cc4fa2e-3a8c-41e5-994d-752cd8759738.jpg" alt="">
+        <div class="text">
+          <h2>Maternity</h2>
+          <h5>Welcome to the newest <br> member in family</h5>
+        </div>
+      </div>
+      <div>
+        <img src="https://cdn.sweetescape.com/images/occasions/thumbnail/square/144/ae6b4d9c-cf49-4777-b300-6d865d356288.jpg" alt="">
+        <div class="text">
+          <h2>Others</h2>
+          <h5>For every moment, <br> anywhere, any time </h5>
+        </div>
+      </div>
+    </div>
+
+    
+
+   <footer></footer>
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script src="./index.js"></script>
+
+<script>
+    $(function () {
+        $('header').load('navbar.html');
+        $('footer').load('footer.html');
+    }) 
+  </script>
